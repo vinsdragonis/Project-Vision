@@ -1,0 +1,10 @@
+
+
+# Linguist overrides
+
+*.md linguist-detectable=true
+*.md linguist-language=Unity3D-Asset
+*.md linguist-documentation=false
+
+# README.md linguist-detectable=false
+# readme.md linguist-detectable=false
