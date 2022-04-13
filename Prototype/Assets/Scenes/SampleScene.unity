@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4514029, g: 0.5008957, b: 0.5723189, a: 1}
+  m_IndirectSpecularColor: {r: 0.4514025, g: 0.50089526, b: 0.5723183, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -332,6 +332,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4514728800697752219, guid: b5e172a2e2c7cba448be3808199acc3c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -272
+      objectReference: {fileID: 0}
+    - target: {fileID: 4514728800697752219, guid: b5e172a2e2c7cba448be3808199acc3c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 208
+      objectReference: {fileID: 0}
     - target: {fileID: 4514728801755770178, guid: b5e172a2e2c7cba448be3808199acc3c, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -430,11 +438,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4514728802381323537, guid: b5e172a2e2c7cba448be3808199acc3c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 406.98474
+      value: 233
       objectReference: {fileID: 0}
     - target: {fileID: 4514728802381323537, guid: b5e172a2e2c7cba448be3808199acc3c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -6.382202
+      value: 158
       objectReference: {fileID: 0}
     - target: {fileID: 4514728802381323550, guid: b5e172a2e2c7cba448be3808199acc3c, type: 3}
       propertyPath: m_Sprite
