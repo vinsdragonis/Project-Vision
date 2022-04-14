@@ -7,7 +7,7 @@ public class roateAround : MonoBehaviour
     public GameObject c;
     [SerializeField] GameObject target;
     [SerializeField] int rSpeed;
-    public bool rotated = false;
+    [SerializeField] public bool rotated = false;
 
     // Start is called before the first frame update
     void Start()

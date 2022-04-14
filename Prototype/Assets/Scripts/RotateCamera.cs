@@ -7,6 +7,8 @@ public class RotateCamera : MonoBehaviour
     [SerializeField] Camera cameraObj;
     [SerializeField] GameObject myGameObj;
     [SerializeField] float speed = 2f;
+    [SerializeField] new GameObject gameObject;
+    bool isRotated;
 
     // Start is called before the first frame update
     void Start()
@@ -17,21 +19,25 @@ public class RotateCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        isRotated = gameObject.GetComponent<roateAround>().rotated;
         rotateCamera();
     }
 
 
     void rotateCamera()
     {
-        if (Input.GetMouseButton(0))
+        if (isRotated == true)
         {
-            cameraObj.transform.RotateAround(myGameObj.transform.position,
-                                            cameraObj.transform.up,
-                                            -Input.GetAxis("Mouse X") * speed);
+            if (Input.GetMouseButton(0))
+            {
+                cameraObj.transform.RotateAround(myGameObj.transform.position,
+                                                cameraObj.transform.up,
+                                                -Input.GetAxis("Mouse X") * speed);
 
-            // cameraObj.transform.RotateAround(myGameObj.transform.position,
-            //                                 cameraObj.transform.right,
-            //                                 -Input.GetAxis("Mouse Y") * speed);
+                // cameraObj.transform.RotateAround(myGameObj.transform.position,
+                //                                 cameraObj.transform.right,
+                //                                 -Input.GetAxis("Mouse Y") * speed);
+            }
         }
     }
 }
