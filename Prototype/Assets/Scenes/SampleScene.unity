@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 490d4cdff1258c74e9740a85f584f84b, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4514029, g: 0.5008957, b: 0.5723189, a: 1}
+  m_IndirectSpecularColor: {r: 0.36518356, g: 0.40087697, b: 0.45166838, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -259,8 +259,8 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 0.8
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 0.5
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -317,14 +317,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
-  m_LocalRotation: {x: -0.22414389, y: -0.48296306, z: 0.12940958, w: -0.8365162}
-  m_LocalPosition: {x: 69.9, y: 32, z: -34.3}
+  m_LocalRotation: {x: 0.5, y: 0, z: 0, w: 0.8660254}
+  m_LocalPosition: {x: 0, y: 100, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 30, y: -300, z: 0}
+  m_LocalEulerAnglesHint: {x: 60, y: 0, z: 0}
 --- !u!1001 &1020343344
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -582,6 +582,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: nintendo_low._singletile
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1ace1693400a5fd46acda4b834737ab2, type: 3}
+      propertyPath: m_TagString
+      value: MainObject
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ace1693400a5fd46acda4b834737ab2, type: 3}
 --- !u!1 &1660593751
@@ -633,7 +637,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   c: {fileID: 1660593751}
   target: {fileID: 301170604}
-  rSpeed: 30
+  rSpeed: 50
   rotated: 0
 --- !u!81 &1660593754
 AudioListener:
@@ -700,7 +704,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraObj: {fileID: 1660593755}
   myGameObj: {fileID: 301170604}
-  speed: 1
+  speed: 5
+  gameObject: {fileID: 1660593751}
 --- !u!1 &1755981941
 GameObject:
   m_ObjectHideFlags: 0
