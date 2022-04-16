@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/3d_viewspace.uss?fileID=7433441132597879392&amp;guid=652222aade19a094d9e1665bdabdfe83&amp;type=3#3d_viewspace" />
+    <ui:VisualElement style="height: 100%; width: 100%;">
+        <ui:Button text="Previous" display-tooltip-when-elided="true" name="Nav_Prev" class="nav-button" style="-unity-font-style: bold;" />
+        <ui:Button text="Back" display-tooltip-when-elided="true" name="BackButton" style="width: 60px; height: 40px; min-height: 40px; min-width: 80px; visibility: visible; left: 20px; top: 20px; flex-direction: row; -unity-text-align: middle-right; border-top-left-radius: 16px; border-bottom-left-radius: 16px; border-top-right-radius: 16px; border-bottom-right-radius: 16px; border-left-color: rgba(231, 231, 231, 0.54); border-right-color: rgba(231, 231, 231, 0.54); border-top-color: rgba(231, 231, 231, 0.54); border-bottom-color: rgba(231, 231, 231, 0.54); background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); justify-content: flex-start; align-items: center; border-right-width: 2px; border-left-width: 2px; border-bottom-width: 2px;">
+            <ui:VisualElement name="arrow" style="width: 40%; height: 50%; left: 0; flex-direction: column; -unity-text-align: middle-right; background-image: url(&apos;project://database/Assets/Icons/arrow_icon.png?fileID=2800000&amp;guid=5463a2e3cb0d8f24292d0adf5f1b0b51&amp;type=3#arrow_icon&apos;);" />
+        </ui:Button>
+        <ui:Button text="Next" display-tooltip-when-elided="true" name="Nav_Next" class="nav-button" style="left: auto; right: 20px; -unity-font-style: bold;" />
+        <ui:VisualElement style="height: 239px; width: 249px; top: 20px; position: absolute; left: auto; right: 20px;">
+            <ui:Label text="Intrsuction" display-tooltip-when-elided="true" style="height: 100%; color: rgba(0, 0, 0, 255); -unity-text-align: middle-center; font-size: 16px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
