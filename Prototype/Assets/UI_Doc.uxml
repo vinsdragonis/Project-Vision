@@ -7,7 +7,7 @@
         </ui:Button>
         <ui:Button text="Next" display-tooltip-when-elided="true" name="Nav_Next" class="nav-button" style="left: auto; right: 20px; -unity-font-style: bold; transition-property: font-size; transition-duration: 2s; transition-timing-function: linear; transition-delay: 1s;" />
         <ui:VisualElement style="height: 239px; width: 249px; top: 80px; position: absolute; left: auto; right: 20px;">
-            <ui:Label text="Intrsuction" display-tooltip-when-elided="true" style="height: 100%; color: rgb(0, 0, 0); -unity-text-align: middle-center; font-size: 16px;" />
+            <ui:Label text="Intrsuction" display-tooltip-when-elided="true" name="Instruction" style="height: 100%; color: rgb(0, 0, 0); -unity-text-align: middle-center; font-size: 16px;" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
