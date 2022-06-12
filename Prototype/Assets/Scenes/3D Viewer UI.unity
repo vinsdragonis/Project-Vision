@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4482447, g: 0.49827164, b: 0.57558084, a: 1}
+  m_IndirectSpecularColor: {r: 0.44566083, g: 0.49499655, b: 0.5729745, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -382,7 +382,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1003345568}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.802, y: 2.734, z: -5.25}
+  m_LocalPosition: {x: 9.802, y: 2.734, z: -12.56}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -445,7 +445,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1324143590}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -7.75, y: 12, z: 0}
+  m_LocalPosition: {x: -7.75, y: 16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -514,6 +514,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Document: {fileID: 1770347673}
+  mainCamera: {fileID: 0}
 --- !u!1 &1888267898
 GameObject:
   m_ObjectHideFlags: 0
@@ -526,6 +527,7 @@ GameObject:
   - component: {fileID: 1888267900}
   - component: {fileID: 1888267899}
   - component: {fileID: 1888267902}
+  - component: {fileID: 1888267903}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -612,10 +614,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainCamera: {fileID: 1888267898}
-  TargetPosition: {fileID: 1324143590}
   speed: 0.75
   positions: []
-  rotations: []
+  rotationsEuler: []
+  index: -1
+--- !u!114 &1888267903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1888267898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63bab68622c1813479b7106ee6c5ccc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positions: []
+  rotationsEuler: []
 --- !u!1001 &4266959791714951660
 PrefabInstance:
   m_ObjectHideFlags: 0
