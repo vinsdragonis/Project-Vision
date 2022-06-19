@@ -10,7 +10,8 @@ public class RotateCamera : MonoBehaviour
     //[SerializeField] new GameObject gameObject;
     Quaternion angle;
     bool isRotated=true;
-    float zoom=0f;
+    float zoom = 0f;
+    public bool isRotating = false;
 
     // Start is called before the first frame update
     void Start()
@@ -40,6 +41,10 @@ public class RotateCamera : MonoBehaviour
             cameraObj.transform.RotateAround(myGameObj.transform.position,
                                             cameraObj.transform.right,
                                             -Input.GetAxis("Mouse Y") * speed);
+
+            isRotating = true;
+        } else {
+            isRotating = false;
         }
         if (Input.GetMouseButton(1)) {
             zoom+=0.001f;

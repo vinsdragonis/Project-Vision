@@ -8,6 +8,7 @@ public class Navigation : MonoBehaviour
 {
     public UIDocument Document;
     public GameObject mainCamera;
+    bool camera_move_enabled;
     
     // Start is called before the first frame update
     void Awake() {
@@ -21,6 +22,7 @@ public class Navigation : MonoBehaviour
         if(nextBT != null)
         {
             nextBT.clicked += () => {
+                rpt.camera_move_enabled = true;
                 rpt.index+=1;
                 instruction.text = rpt.index.ToString();
             };
@@ -28,6 +30,7 @@ public class Navigation : MonoBehaviour
         if(backBT != null)
         {
             backBT.clicked += () => {
+                rpt.camera_move_enabled = true;
                 rpt.index-=1;
                 instruction.text = rpt.index.ToString();
             };
