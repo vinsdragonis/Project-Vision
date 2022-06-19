@@ -9,8 +9,8 @@ public class RotateCamera : MonoBehaviour
     [SerializeField] float speed = 4f;
     //[SerializeField] new GameObject gameObject;
     Quaternion angle;
-    bool isRotated=true;
-    float zoom = 0f;
+    bool isRotated = true;
+    // float zoom = 0f;
     public bool isRotating = false;
 
     // Start is called before the first frame update
@@ -43,22 +43,21 @@ public class RotateCamera : MonoBehaviour
                                             -Input.GetAxis("Mouse Y") * speed);
 
             isRotating = true;
+        // } else if (Input.GetMouseButton(1)) {
+        //     zoom+=0.001f;
+        //     transform.position = Vector3.MoveTowards(transform.position, myGameObj.transform.position, zoom);
+        // } else if (Input.GetMouseButton(2)) {
+        //     zoom-=0.001f;
+        //     transform.position = Vector3.MoveTowards(transform.position, myGameObj.transform.position, zoom);
         } else {
             isRotating = false;
         }
-        if (Input.GetMouseButton(1)) {
-            zoom+=0.001f;
-            transform.position = Vector3.MoveTowards(transform.position, myGameObj.transform.position, zoom);
-        }
-        else if (Input.GetMouseButton(2)) {
-            zoom-=0.001f;
-            transform.position = Vector3.MoveTowards(transform.position, myGameObj.transform.position, zoom);
-        }
-        angle.eulerAngles=new Vector3(transform.eulerAngles.x,transform.eulerAngles.y,0);
-        transform.rotation=angle;
+        
+        angle.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, 0);
+        transform.rotation = angle;
     }
     void viewMode() {
-        isRotated=!isRotated;
+        isRotated = !isRotated;
     }
 
 }

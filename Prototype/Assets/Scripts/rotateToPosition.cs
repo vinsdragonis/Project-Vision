@@ -23,8 +23,8 @@ public class rotateToPosition : MonoBehaviour
         positions = view.positions;
         rotationsEuler = view.rotationsEuler;
         index = 0;
-        
-        Invoke("enableCamera", 3);
+
+        Invoke("enableCamera", 2);
     }
 
     // Update is called once per frame
@@ -34,6 +34,8 @@ public class rotateToPosition : MonoBehaviour
 
         if (isRotating) {
             camera_move_enabled = false;
+        } else {
+            camera_move_enabled = true;
         }
 
         if (camera_move_enabled)
