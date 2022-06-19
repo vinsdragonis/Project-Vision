@@ -14,6 +14,7 @@ public class rotateToPosition : MonoBehaviour
     private Quaternion rotation;
     private Vector3 position;
     public int index = 0;
+    bool isRotated = false;
     bool isRotating = false;
 
     // Start is called before the first frame update
@@ -30,6 +31,7 @@ public class rotateToPosition : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        isRotated = gameObject.GetComponent<roateAround>().rotated;
         isRotating = gameObject.GetComponent<RotateCamera>().isRotating;
 
         if (isRotating) {
@@ -38,7 +40,7 @@ public class rotateToPosition : MonoBehaviour
             camera_move_enabled = true;
         }
 
-        if (camera_move_enabled)
+        if (isRotated && camera_move_enabled)
         {
             rotation.eulerAngles = rotationsEuler[index];
             MainCamera.transform.position = Vector3.Lerp(transform.position, positions[index], speed * Time.deltaTime);

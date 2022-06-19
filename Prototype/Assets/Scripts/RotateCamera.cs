@@ -22,7 +22,7 @@ public class RotateCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //isRotated = gameObject.GetComponent<roateAround>().rotated;
+        isRotated = gameObject.GetComponent<roateAround>().rotated;
         if (isRotated == true)
         {   
             rotateCamera();
