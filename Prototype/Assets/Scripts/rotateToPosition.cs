@@ -12,6 +12,7 @@ public class rotateToPosition : MonoBehaviour
     public List<Vector3> positions;
     public List<Vector3> rotationsEuler;
     private Quaternion rotation;
+    private Vector3 position;
     public int index=0;
 
     // Start is called before the first frame update
@@ -28,23 +29,21 @@ public class rotateToPosition : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rotation.eulerAngles = rotationsEuler[index];
         if (camera_move_enabled)
         {
-            rotation.eulerAngles = rotationsEuler[index];
+            // rotation.eulerAngles = rotationsEuler[index];
             MainCamera.transform.position = Vector3.Lerp(transform.position, positions[index], speed * Time.deltaTime);
             MainCamera.transform.rotation = Quaternion.Lerp(transform.rotation, rotation, speed * Time.deltaTime);
         }
+    }
+    void changePosition() {
+        position = positions[index];
+        rotation.eulerAngles = rotationsEuler[index];
     }
 
     void enableCamera() {
         camera_move_enabled = true;
     }
 
-    // public void UserClickedCameraResetButton()
-    // {
-    //     TargetPosition.transform.position = new Vector3(-106.2617f, 68.81419f, 14.92558f);
-    //     TargetPosition.transform.rotation = Quaternion.Euler(39.7415f, 145.0724f, 0);
-    //     camera_move_enabled = true;
-    // }
+   
 }

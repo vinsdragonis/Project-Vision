@@ -358,6 +358,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &593439727 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1ace1693400a5fd46acda4b834737ab2, type: 3}
+  m_PrefabInstance: {fileID: 307668098}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &593439728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593439727}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb74db2864d71b44280bfd1efd8443ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Speed: 100
+  m_WorldSpace: 0
 --- !u!1 &1003345568
 GameObject:
   m_ObjectHideFlags: 0
@@ -528,6 +547,7 @@ GameObject:
   - component: {fileID: 1888267899}
   - component: {fileID: 1888267902}
   - component: {fileID: 1888267903}
+  - component: {fileID: 1888267904}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -594,7 +614,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1888267898}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 8.21, z: -24.49}
+  m_LocalPosition: {x: 0, y: 4.96, z: -20.45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -608,7 +628,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1888267898}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8997454d93251eb4cacb909166b6c0ad, type: 3}
   m_Name: 
@@ -632,6 +652,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positions: []
   rotationsEuler: []
+--- !u!114 &1888267904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1888267898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84b8b25ac3a4c3d48b7a2f5319192d56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraObj: {fileID: 1888267900}
+  myGameObj: {fileID: 593439727}
+  speed: 4
 --- !u!1001 &4266959791714951660
 PrefabInstance:
   m_ObjectHideFlags: 0
