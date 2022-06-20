@@ -23,16 +23,16 @@ public class Navigation : MonoBehaviour
         {
             nextBT.clicked += () => {
                 rpt.camera_move_enabled = true;
-                rpt.index+=1;
-                instruction.text = rpt.index.ToString();
+                rpt.index=(rpt.index+1)%4;
+                instruction.text = rpt.instruction;
             };
         }
         if(backBT != null)
         {
             backBT.clicked += () => {
                 rpt.camera_move_enabled = true;
-                rpt.index-=1;
-                instruction.text = rpt.index.ToString();
+                rpt.index=(rpt.index-1)%4;
+                instruction.text = rpt.instruction;
             };
         }
     }

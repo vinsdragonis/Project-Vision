@@ -16,13 +16,17 @@ public class rotateToPosition : MonoBehaviour
     public int index = 0;
     bool isRotated = false;
     bool isRotating = false;
+    List<string> instructions;
+    public string instruction;
+    ViewData view;
 
     // Start is called before the first frame update
     void Start()
     {
-        ViewData view = gameObject.GetComponent<ViewData>();
+        view = gameObject.GetComponent<ViewData>();
         positions = view.positions;
         rotationsEuler = view.rotationsEuler;
+        instructions = view.instructions;
         index = 0;
 
         Invoke("enableCamera", 2);
@@ -33,7 +37,7 @@ public class rotateToPosition : MonoBehaviour
     {
         isRotated = gameObject.GetComponent<roateAround>().rotated;
         isRotating = gameObject.GetComponent<RotateCamera>().isRotating;
-
+        instruction=instructions[index];
         if (isRotating) {
             camera_move_enabled = false;
         } else {
@@ -46,6 +50,7 @@ public class rotateToPosition : MonoBehaviour
             MainCamera.transform.position = Vector3.Lerp(transform.position, positions[index], speed * Time.deltaTime);
             MainCamera.transform.rotation = Quaternion.Lerp(transform.rotation, rotation, speed * Time.deltaTime);
         }
+        instruction=view.instructions[index];
     }
     void changePosition() {
         position = positions[index];
