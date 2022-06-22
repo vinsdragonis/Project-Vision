@@ -31,7 +31,8 @@ public class Navigation : MonoBehaviour
         {
             backBT.clicked += () => {
                 rpt.camera_move_enabled = true;
-                rpt.index=(rpt.index-1)%4;
+                rpt.index=(rpt.index-1);
+                if(rpt.index<0) rpt.index=0;
                 instruction.text = rpt.instruction;
             };
         }
