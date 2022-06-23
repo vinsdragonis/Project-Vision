@@ -13,6 +13,7 @@ public class roateAround : MonoBehaviour
     void Start()
     {
         c.transform.rotation = Quaternion.Euler(0, 2, 0);
+        Screen.orientation = ScreenOrientation.LandscapeLeft;
     }
 
     // Update is called once per frame

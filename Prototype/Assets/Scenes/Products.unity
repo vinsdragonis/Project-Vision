@@ -311,7 +311,7 @@ PrefabInstance:
     - target: {fileID: 2475758752364340094, guid: 7223b66170f139645ad6dcadbabc9768, type: 3}
       propertyPath: sourceAsset
       value: 
-      objectReference: {fileID: 9197481963319205126, guid: fafaee3ae522f044e91b1687585d23ac, type: 3}
+      objectReference: {fileID: 9197481963319205126, guid: 760e0793f4184c54baedbc0eb3b963b7, type: 3}
     - target: {fileID: 2475758752364340094, guid: 7223b66170f139645ad6dcadbabc9768, type: 3}
       propertyPath: m_PanelSettings
       value: 
