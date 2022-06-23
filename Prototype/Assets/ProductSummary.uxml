@@ -1,22 +1,24 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <ui:VisualElement name="Navbar" style="min-height: 50px; max-height: 80px; padding-left: 16px; padding-right: 16px; padding-top: 16px; padding-bottom: 16px; flex-direction: row;">
-        <ui:Button display-tooltip-when-elided="true" style="min-width: 24px; min-height: 24px; max-width: 24px; max-height: 36px; background-image: url(&apos;project://database/Assets/Icons/icons/arrow_icon.png?fileID=2800000&amp;guid=5463a2e3cb0d8f24292d0adf5f1b0b51&amp;type=3#arrow_icon&apos;); height: auto; background-color: rgba(88, 88, 88, 0); width: auto; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0;" />
-        <ui:Label text="Nintendo Switch" display-tooltip-when-elided="true" style="font-size: 20px; color: rgb(0, 0, 0); -unity-text-align: middle-left; margin-right: 0; margin-left: 16px;" />
-    </ui:VisualElement>
-    <ui:VisualElement name="ProductImage" style="background-image: url(&apos;project://database/Assets/Icons/Product%20images/nintendo.png?fileID=2800000&amp;guid=4f06d66c708434d45871f4704615d395&amp;type=3#nintendo&apos;); min-width: 302px; min-height: 170px; height: 210px; width: 360px;" />
-    <ui:VisualElement style="flex-grow: 0; align-items: center;">
-        <ui:VisualElement style="flex-grow: 1; max-height: 50px; flex-direction: row; width: 358px;">
-            <ui:Label text="Product Summary" display-tooltip-when-elided="true" style="color: rgb(0, 0, 0); font-size: 14px; -unity-text-align: middle-left; -unity-font-style: bold; white-space: normal; margin-bottom: 14px; padding-left: 16px; padding-right: 0; margin-top: 16px;" />
+    <ui:VisualElement style="background-color: rgb(255, 255, 255); flex-grow: 1;">
+        <ui:VisualElement name="Navbar" style="min-height: 50px; max-height: 80px; padding-left: 16px; padding-right: 16px; padding-top: 16px; padding-bottom: 16px; flex-direction: row; background-color: rgb(255, 255, 255);">
+            <ui:Button display-tooltip-when-elided="true" style="min-width: 24px; min-height: 24px; max-width: 24px; max-height: 36px; background-image: url(&apos;project://database/Assets/Icons/icons/arrow_icon.png?fileID=2800000&amp;guid=5463a2e3cb0d8f24292d0adf5f1b0b51&amp;type=3#arrow_icon&apos;); height: auto; background-color: rgba(88, 88, 88, 0); width: auto; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0;" />
+            <ui:Label text="Nintendo Switch" display-tooltip-when-elided="true" style="font-size: 20px; color: rgb(0, 0, 0); -unity-text-align: middle-left; margin-right: 0; margin-left: 16px;" />
         </ui:VisualElement>
-        <ui:Label text="The new home video game system from Nintendo. In addition to providing single and multiplayer thrills at home, the Nintendo Switch system can be taken on the go so players can enjoy a full home console experience anytime, anywhere. The mobility of a handheld is now added to the power of a home gaming system," display-tooltip-when-elided="true" name="ProductDecription" style="color: rgb(0, 0, 0); font-size: 14px; flex-wrap: wrap; white-space: normal; width: auto; margin-left: 16px; margin-right: 16px;" />
-    </ui:VisualElement>
-    <ui:VisualElement>
-        <ui:VisualElement style="flex-grow: 1; max-height: 50px; flex-direction: row; width: 358px;">
-            <ui:Label text="Instruction Sets:" display-tooltip-when-elided="true" style="color: rgb(0, 0, 0); font-size: 14px; -unity-text-align: middle-left; -unity-font-style: bold; white-space: normal; margin-bottom: 14px; padding-left: 16px; padding-right: 0; margin-top: 16px;" />
+        <ui:VisualElement name="ProductImage" style="background-image: url(&apos;project://database/Assets/Icons/Product%20images/nintendo.png?fileID=2800000&amp;guid=4f06d66c708434d45871f4704615d395&amp;type=3#nintendo&apos;); min-width: 302px; min-height: 170px; height: 210px; width: 360px;" />
+        <ui:VisualElement style="flex-grow: 0; align-items: center;">
+            <ui:VisualElement style="flex-grow: 1; max-height: 50px; flex-direction: row; width: 358px;">
+                <ui:Label text="Product Summary" display-tooltip-when-elided="true" style="color: rgb(0, 0, 0); font-size: 14px; -unity-text-align: middle-left; -unity-font-style: bold; white-space: normal; margin-bottom: 14px; padding-left: 16px; padding-right: 0; margin-top: 16px;" />
+            </ui:VisualElement>
+            <ui:Label text="The new home video game system from Nintendo. In addition to providing single and multiplayer thrills at home, the Nintendo Switch system can be taken on the go so players can enjoy a full home console experience anytime, anywhere. The mobility of a handheld is now added to the power of a home gaming system," display-tooltip-when-elided="true" name="ProductDecription" style="color: rgb(0, 0, 0); font-size: 14px; flex-wrap: wrap; white-space: normal; width: auto; margin-left: 16px; margin-right: 16px;" />
         </ui:VisualElement>
-        <ui:VisualElement style="flex-direction: row; padding-left: 16px; padding-right: 16px; padding-top: 4px; padding-bottom: 4px; justify-content: space-between; margin-left: 16px; margin-right: 16px; background-image: url(&apos;project://database/Assets/Icons/icons/instruction.png?fileID=2800000&amp;guid=59d9dc2fc5a08db4da9be2009af87a54&amp;type=3#instruction&apos;);">
-            <ui:Label text="&#10;1. Starting Nintendo Switch&#10;" display-tooltip-when-elided="true" style="color: rgb(0, 0, 0); -unity-text-align: middle-left; white-space: normal; width: auto; padding-right: 0; padding-left: 0; flex-shrink: 1; font-size: 14px; flex-direction: column; flex-grow: 1; height: 24px; padding-top: 0;" />
-            <ui:Button text="&#10;" display-tooltip-when-elided="true" style="min-width: 24px; min-height: 24px; width: 24px; height: 24px; background-image: url(&apos;project://database/Assets/Icons/icons/ic_round-navigate-next.png?fileID=2800000&amp;guid=fc969f69dde4907409cebd0e1a8d70b0&amp;type=3#ic_round-navigate-next&apos;); background-color: rgba(88, 88, 88, 0); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0;" />
+        <ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1; max-height: 50px; flex-direction: row; width: 358px;">
+                <ui:Label text="Instruction Sets:" display-tooltip-when-elided="true" style="color: rgb(0, 0, 0); font-size: 14px; -unity-text-align: middle-left; -unity-font-style: bold; white-space: normal; margin-bottom: 14px; padding-left: 16px; padding-right: 0; margin-top: 16px;" />
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-direction: row; padding-left: 16px; padding-right: 16px; padding-top: 4px; padding-bottom: 4px; justify-content: space-between; margin-left: 16px; margin-right: 16px; background-image: none;">
+                <ui:Label text="&#10;1. Starting Nintendo Switch&#10;" display-tooltip-when-elided="true" style="color: rgb(0, 0, 0); -unity-text-align: middle-left; white-space: normal; width: auto; padding-right: 0; padding-left: 0; flex-shrink: 1; font-size: 14px; flex-direction: column; flex-grow: 1; height: 24px; padding-top: 0;" />
+                <ui:Button text="&#10;" display-tooltip-when-elided="true" style="min-width: 24px; min-height: 24px; width: 24px; height: 24px; background-image: url(&apos;project://database/Assets/Icons/icons/ic_round-navigate-next.png?fileID=2800000&amp;guid=fc969f69dde4907409cebd0e1a8d70b0&amp;type=3#ic_round-navigate-next&apos;); background-color: rgba(88, 88, 88, 0); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0;" />
+            </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
