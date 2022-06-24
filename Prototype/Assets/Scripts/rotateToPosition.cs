@@ -52,9 +52,9 @@ public class rotateToPosition : MonoBehaviour
         }
         instruction=view.instructions[index];
     }
-    void changePosition() {
-        position = positions[index];
-        rotation.eulerAngles = rotationsEuler[index];
+    public void changeInstruction(int dir) {
+        index=index+dir;
+        instruction=instructions[index];
     }
 
     void enableCamera() {

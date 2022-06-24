@@ -12,7 +12,10 @@ public class NavigationProduct : MonoBehaviour
     {
         var root = Document.rootVisualElement;
         var instBT = root.Q<Button>("ToInstruction");
-        var backBT = root.Q<Button>("Back");    
+        var backBT = root.Q<Button>("Back");
+        // var productImg = root.Q<VisualElement>("ProductImage");
+        // productImg.style.width = new Length(300,LengthUnit.Pixel);
+        // productImg.style.height = new Length(200,LengthUnit.Pixel);
         Screen.orientation = ScreenOrientation.Portrait;
         if(instBT != null)
         {

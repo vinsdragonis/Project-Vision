@@ -25,19 +25,19 @@ public class Navigation : MonoBehaviour
         {
             nextBT.clicked += () => {
                 rpt.camera_move_enabled = true;
-                if(rpt.index < 4) 
-                    rpt.index = (rpt.index + 1) ;
-                instruction.text = rpt.instruction+rpt.index;
+                if(rpt.index < 5) 
+                    rpt.changeInstruction(1);
+                instruction.text = rpt.instruction;
             };
         }
         if(prevBT != null)
         {
             prevBT.clicked += () => {
                 rpt.camera_move_enabled = true;
-                if(rpt.index>1)
-                    rpt.index = (rpt.index - 1) ;
+                if(rpt.index>0)
+                    rpt.changeInstruction(-1);
                 // if(rpt.index < 0) rpt.index = 5;
-                instruction.text = rpt.instruction+rpt.index;
+                instruction.text = rpt.instruction;
             };
         }
         if(backBT != null)
