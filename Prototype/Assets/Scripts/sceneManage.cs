@@ -1,23 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 using UnityEngine.SceneManagement;
 
 public class sceneManage : MonoBehaviour
 {
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public UIDocument Document;
 
-    // Update is called once per frame
-    // void Update()
-    // {
-        
-    // }
-    void LoadNextScene() 
+    private void Awake() {
+        var root = Document.rootVisualElement;
+        var viewBT = root.Q<Button>("ViewBTN");
+        var exitBT = root.Q<Button>("ExitBTN");
+
+        if(viewBT != null)
+        {
+            viewBT.clicked += () => {
+                LoadNextScene();
+            };
+        }
+        if(exitBT != null)
+        {
+            exitBT.clicked += () => {
+                Application.Quit();
+            };
+        }
+    }
+    public void LoadNextScene() 
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         int nextSceneIndex = currentSceneIndex + 1;

@@ -21,11 +21,13 @@ public class ViewData :MonoBehaviour
         rotationsEuler.Add(new Vector3(0,0,0));
         rotationsEuler.Add(new Vector3(0,0,0));
         rotationsEuler.Add(new Vector3(0,0,0));
+        instructions.Add("Start");
         instructions.Add("Press the highlighted button to power on the device");
         instructions.Add("The display has been turned on");
         instructions.Add("Press the home button once");
-        instructions.Add("Your device has been unlocked");
-
+        instructions.Add("Now press the home button 3 times");
+        instructions.Add("Congratulations! Your device has been unlocked");
+        // instructions.Add("Product Name: Nintendo Switch OLED");
     }
     
 }
