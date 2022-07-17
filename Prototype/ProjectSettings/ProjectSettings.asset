@@ -877,7 +877,7 @@ PlayerSettings:
     Build: 0
     Collab: 0
     Game Performance: 0
-    Legacy Analytics: 0
+    Legacy Analytics: 1
     Purchasing: 0
     UDP: 0
     UNet: 1
