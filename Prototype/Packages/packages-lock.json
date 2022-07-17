@@ -98,11 +98,14 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
-    "com.unity.purchasing.udp": {
-      "version": "2.2.5",
+    "com.unity.services.analytics": {
+      "version": "4.0.1",
       "depth": 0,
       "source": "registry",
-      "dependencies": {},
+      "dependencies": {
+        "com.unity.ugui": "1.0.0",
+        "com.unity.services.core": "1.4.0"
+      },
       "url": "https://packages.unity.com"
     },
     "com.unity.services.core": {
