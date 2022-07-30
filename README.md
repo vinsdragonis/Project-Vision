@@ -12,7 +12,7 @@
 ## Features supported and future plans
 - [x] Visualize the entity under consideration in all directions
 - [x] Visualize operations virtually
-- [ ] Analyzing user behavior
-- [ ] Analyze customer reviews
+- [x] Analyzing user behavior
+- [x] Analyze customer reviews
 - [ ] Performing real-time analysis on the real world entity
 - [ ] Using hand gestures to interact with the virtual entity
